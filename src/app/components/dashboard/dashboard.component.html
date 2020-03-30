@@ -1,147 +1,22 @@
 <div style="width: 100%;height: 100%;">
-    <div style="width: 100%;height: 8%;background-color: #7966ff;" fxLayout="row" fxLayoutAlign=" center">
-        <div fxLayout="row" fxFlex="95">
-            <mat-icon style="color: white; margin-left: 2%;">menu</mat-icon>
-        </div>
-        <mat-icon style="color: white;display: flex;" matBadge="15" matBadgeColor="warn">notifications_active
-        </mat-icon>
-    </div>
-    <div style="width: 100%;height: 84%; background-color: #f7f8fa;" fxLayout="row-wrap" fxLayoutAlign="center">
-        <div style="width: 80%;height: 100%;" fxLayout="column">
-            <div style="width: 100%;height: 22%;" fxLayout="row" fxLayoutAlign="start center" dir="ltr"
-                fxLayoutGap="2.5%">
-                <div style="width:10%;height:80%;border-radius: 50%;background-color: #F1EEFC;"
-                    fxLayoutAlign="center center">
-                    <img src="https://img.icons8.com/color/100/000000/human-head.png" />
-                </div>
-                <div fxLayout="column" dir="ltr" fxLayoutGap="2.5%">
-                    <span>Rohan Kadam</span>
-                    <span>rohan.kadam@directrice@gmail.com</span>
-                </div>
-            </div>
+    <mat-toolbar style="height:8vh ;" color="primary" class="example-toolbar">
+    <button (click)="sidenav.toggle()" mat-icon-button ><mat-icon>menu</mat-icon></button>
+    
+  </mat-toolbar>
+  <mat-sidenav-container>
 
-            <div style="width:100%;height: 35%;" fxLayoutAlign="center center">
-                <div style="width:40%;height: 95%;background-color: white; 
-                box-shadow:
-0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-0 12.5px 10px rgba(0, 0, 0, 0.06),
-0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-0 4px 80px rgba(0, 0, 0, 0.12)
-;
-                ;
-                border:1px solid darkgray;
-                border-radius: 10px;" dir="ltr" fxLayout="column" fxLayoutAlign="space-between center">
-                    <div style="width: 90%;height: 40%;" fxLayout="row" fxLayoutAlign="space-between center">
-                        <span style="margin: 1%; font: 1em sans-serif;font-size:large;">My Balances</span>
-                        <img style="margin:1%;" src="https://img.icons8.com/color/48/000000/add.png" />
-                        <!-- <mat-icon style="color: #7966ff; margin: 3%;font-size: larger;">add</mat-icon> -->
-
-                    </div>
+    <mat-sidenav #sidenav mode="side" style="width: 5%;height: 100vh">
+      <mat-nav-list >
+        
 
 
-                    <div style="width: 90%;height: 35%; margin-bottom: 4%;" dir="ltr"
-                        fxLayoutAlign="space-between center">
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="mat-sidenav-content" style="width: 100%;height: 92vh;">
+      <!-- <router-outlet></router-outlet> -->
 
-                        <div style="width:20%;height:100%;border-radius: 20%;background-color: #F1EEFC;"
-                            fxLayout="column" fxLayoutAlign="center center">
-                            <img src="https://img.icons8.com/color/48/000000/money-transfer.png" />
-                            <span>Send</span>
-                        </div>
+      <app-dash-home></app-dash-home>
+    </mat-sidenav-content>
 
-                        <div style="width:20%;height:100%;border-radius: 20%;background-color: #F1EEFC;"
-                            fxLayout="column" fxLayoutAlign="center center">
-                            <img src="https://img.icons8.com/color/48/000000/initiate-money-transfer.png" />
-                            <span>Pay</span>
-
-                        </div>
-
-                        <div style="width:20%;height:100%;border-radius: 20%;background-color: #F1EEFC;"
-                            fxLayout="column" fxLayoutAlign="center center">
-                            <img src="https://img.icons8.com/color/48/000000/money-box.png" />
-                            <span>TopUp</span>
-
-                        </div>
-
-                        <div style="width:20%;height:100%;border-radius: 20%;background-color: #F1EEFC;"
-                            fxLayout="column" fxLayoutAlign="center center">
-                            <img src="https://img.icons8.com/color/48/000000/request-money.png" />
-                            <span>Request</span>
-
-                        </div>
-
-
-
-
-                    </div>
-                </div>
-
-
-            </div>
-
-            <div style="width: 90%;height: 12%;margin-top: 8%;" fxLayout="row" fxLayoutAlign="space-between center">
-                <div style="width:8%;height:100%;border-radius: 20%;background-color: #F1EEFC;" fxLayout="column"
-                    fxLayoutAlign="center center">
-                    <img src="https://img.icons8.com/cotton/48/000000/online-order.png" />
-                    <span>E-Shopping</span>
-
-                </div>
-                <div style="width:8%;height:100%;border-radius: 20%;background-color: #F1EEFC;" fxLayout="column"
-                    fxLayoutAlign="center center">
-                    <img src="https://img.icons8.com/cotton/48/000000/bill--v2.png" />
-                    <span>Bill-paying</span>
-
-                </div>
-                <div style="width:8%;height:100%;border-radius: 20%;background-color: #F1EEFC;" fxLayout="column"
-                    fxLayoutAlign="center center">
-                    <img src="https://img.icons8.com/cotton/48/000000/like--v4.png" />
-                    <span>Charity</span>
-
-                </div>
-                <div style="width:8%;height:100%;border-radius: 20%;background-color: #F1EEFC;" fxLayout="column"
-                    fxLayoutAlign="center center">
-                    <img src="https://img.icons8.com/cotton/48/000000/wedding-gift.png" /> <span>Send Gifts</span>
-
-                </div>
-                <div style="width:8%;height:100%;border-radius: 20%;background-color: #F1EEFC;" fxLayout="column"
-                    fxLayoutAlign="center center">
-                    <img src="https://img.icons8.com/flat_round/48/000000/split--v1.png" />
-                    <span>Split-Bill</span>
-
-                </div>
-                <div style="width:8%;height:100%;border-radius: 20%;background-color: #F1EEFC;" fxLayout="column"
-                    fxLayoutAlign="center center">
-                    <img src="https://img.icons8.com/cotton/48/000000/receive-cash--v1.png" />
-                    <span>Cash-back</span>
-
-                </div>
-
-            </div>
-
-
-
-        </div>
-    </div>
-    <div style="width: 100%;height: 8%;" fxLayout="row" fxLayoutAlign="space-around center">
-            <div style="width:5%;height:100%;border-radius: 20%;background-color: #F1EEFC;" fxLayout="column"
-            fxLayoutAlign="center center">
-            <img src="https://img.icons8.com/cotton/48/000000/wallet--v1.png"/>           
-             <span>Wallet</span>
-
-        </div>
-        <div style="width:5%;height:100%;border-radius: 20%;background-color: #F1EEFC;" fxLayout="column"
-                    fxLayoutAlign="center center">
-                    <img src="https://img.icons8.com/cotton/48/000000/pulse.png"/>                  
-                      <span>Insights</span>
-
-                </div>
-                <div style="width:5%;height:100%;border-radius: 20%;background-color: #F1EEFC;" fxLayout="column"
-                    fxLayoutAlign="center center">
-                    <img src="https://img.icons8.com/cotton/48/000000/calculator.png"/>            
-                            <span>Tool</span>
-
-                </div>
-        </div>
-
+  </mat-sidenav-container>
 </div>
