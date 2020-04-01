@@ -1,0 +1,225 @@
+.dashMain{
+    width: 100%;
+    height: 100%;
+    background-color:#f6f7fb;
+}
+.dashLeft{
+    width: 65%;
+    height: 100%;
+    background-color:#f6f7fb;
+}
+.balTrans{
+    width: 100%; 
+    height:50% ;
+}
+.balance{
+    width:30%;
+    height: 90%;
+    background-color: white;
+}
+.bal_Header{
+    width: 50%;
+    height: 10%;
+}
+.bal_SubHeader{
+    width: 60%;
+    height: 10%;
+    font-size: 2vw;
+    color: #3f51b5;
+}
+.bal_body{
+    width: 80%;
+    height: 20%; 
+}
+.bal_body_month{
+    width: 35%;
+    height: 40%;
+}
+.bal_body_amount{
+    width: 50%;
+    height: 60%;
+    border:1px solid #19cc5a;
+    border-radius: 12px;
+    color: #19cc5a;
+}
+.bal_body_graph{
+    width: 100%;
+    height: 35%;
+    background-color: lightgrey; 
+}
+.bal_body_overAll{
+    width: 90%;
+    height: 25%;
+}
+.overAll{
+    width: 40%;
+    height: 80%;
+}
+.analitical{
+    width: 65%;
+    height: 90%;
+    background-color: white;
+}
+.anal_Header{
+    width: 100%;
+    height: 10%;
+}
+.anal_Header_text{
+    width: 70%;
+    height: 100%;
+}
+.anal_Header_per{
+    width: 30%;
+    height: 100%;
+    color: #19cc5a;
+}
+.anal_body{
+    width: 100%;
+    height: 80%;
+    background-color: lightgrey;
+}
+.transactionList{
+    width: 100%;
+    height: 50%;
+    background-color: #f6f7fb;   
+}
+.trans_Header{
+    width:95%;
+    height: 90%;
+    background-color: #f6f7fb;
+}
+.trans_Header_text{
+    width:100%;
+    height: 10%;
+}
+.trans_SubHeader{
+    width: 100%;
+    height: 10%;
+}
+.trans_brand{
+    width: 10%;
+    height: 100%;
+}
+.trans_Date{
+    width: 10%;
+    height: 100%;
+
+}
+.trans_Vendor{
+    width: 15%;
+    height: 100%;
+}
+.trans_purDetails{
+    width: 30%;
+    height: 100%;
+}
+.trans_Cost{
+    width: 15%;
+    height: 100%;
+}
+.trans_Details{
+    width: 15%;
+    height: 100%;
+    
+}
+.trans_header_Sub{
+    width: 100%;
+    height: 20%;
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
+    
+    &:hover{
+        background-color: white;
+        box-shadow:-2px 0px 16px 7px lightgray;
+        
+        
+    }
+}
+.dash-right{
+    width: 30%;
+    height: 100%; 
+    background-color: #f6f7fb;  
+}
+.credit-Card{
+    width: 90%;
+    height: 35%;
+}
+.credit-Card-header{
+    width: 90%;
+    height: 20%;
+    background-color: #f6f7fb;  
+}
+.credit-Card-body{
+    width:80%;
+    height: 90%;
+    background-color:#6ba1fd;
+    border-radius: 17px;
+    box-shadow:-2px 0px 16px 7px lightgray; 
+}
+.credit-Card-body-header{
+    width: 90%;
+    height: 30%;
+}
+.dash_right_bottom{
+    width: 90%;
+    height: 30%;   
+}
+.dash_right_content{
+    width: 90%;
+    height: 100%;
+}
+.today_transaction{
+    width: 100%;
+    height: 35%;
+    border:1px solid lightgray;
+    background-color: white;
+   
+    border-radius: 10px;
+}
+.today_transaction_image{
+    width: 30%;
+    height: 100%;
+}
+.today_transaction_details{
+    width: 50%;
+    height: 100%
+}
+.today_transaction_cost{
+    width: 30%;
+    height: 100%;
+    color: #19cc5a;
+}
+.automated_transaction{
+    width: 90%;
+    height: 25%;
+    background-color: white;
+}
+.auto_trans_header{
+    width: 90%;
+    height: 20%;
+    background-color: white;
+    font-weight: 500;
+    font-size: 1.2vw;
+    padding: 10px; 
+}
+.auto_trans_body{
+    width: 90%;
+    height: 80%;
+}
+.auto_data{
+    width: 90%;
+    height: 20%;
+}
+.auto_data_img{
+    width: 30%;
+    height: 100%;
+}
+.auto_data_detail{
+    width: 40%;
+    height: 100%;
+    font-size: 1vw;
+}
+.auto_button{
+    width: 30%;
+    height: 100%;
+}
