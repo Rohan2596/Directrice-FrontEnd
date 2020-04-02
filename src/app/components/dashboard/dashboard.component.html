@@ -1,18 +1,31 @@
 <div class="dashboardMain">
-    <mat-toolbar style="height:8vh ;"  class="example-toolbar">
-    <button (click)="sidenav.toggle()" mat-icon-button ><mat-icon>menu</mat-icon></button>
-    
+    <mat-toolbar style="height:8vh;width: 95%;"  class="example-toolbar" fxLayout="row" fxLayoutAlign="space-between center">
+      <!-- <img src="https://img.icons8.com/cotton/48/000000/mobile-payment--v3.png"/> -->
+    <button (click)="sidenav.toggle()" mat-icon-button ><mat-icon>notes</mat-icon></button>
+    <div fxLayoutAlign="space-between center">
+    <button mat-icon-button>
+      <mat-icon>notifications_none</mat-icon>
+
+  </button>
+  <img src="https://img.icons8.com/bubbles/50/000000/sun-man.png"/>
+  <button mat-icon-button>
+       
+      <mat-icon>keyboard_arrow_down</mat-icon>
+
+
+</button>
+</div>
   </mat-toolbar>
   <mat-sidenav-container>
 
     <mat-sidenav #sidenav mode="side" style="width: 5%;height: 100vh">
-      <mat-nav-list >
-        
+      <mat-nav-list  fxLayout="column" >
 
 
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content class="mat-sidenav-content" style="width: 100%;height: 92vh;">
+      
       <!-- <router-outlet></router-outlet> -->
 
       <app-dash-home></app-dash-home>

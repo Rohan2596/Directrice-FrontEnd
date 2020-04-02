@@ -16,17 +16,22 @@
                         </button>
                         $3000.00</span>
                 </div>
-                <div class="bal_body_graph" style="width: 100%;height: 35%;background-color: lightgrey;">
+                <div class="bal_body_graph" fxLayout="row" fxLayoutAlign="center center">
+                    <ngx-charts-bar-vertical [view]="view" [scheme]="colorScheme" [results]="single"
+                        [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend"
+                        [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel"
+                        [yAxisLabel]="yAxisLabel" [barPadding]="barPadding" (select)="onSelect($event)">
+                    </ngx-charts-bar-vertical>
 
                 </div>
 
                 <div class="bal_body_overAll" fxLayout="row" fxLayoutAlign="space-around center">
                     <div class="overAll" fxLayout="column" fxLayoutAlign="center start">
-                        <span>$872</span>
+                        <span style="font-weight: 600;">$872</span>
                         <span>Expenses</span>
                     </div>
                     <div class="overAll" fxLayout="column" fxLayoutAlign="center start">
-                        <span>126</span>
+                        <span style="font-weight: 600;">126</span>
                         <span>Transactions</span>
                     </div>
 
@@ -40,31 +45,42 @@
                     <div>
                         <span class="anal_Header_per" fxLayoutAlign="center center">
                             <button mat-icon-button>
-                                <mat-icon>keyboard_arrow_down</mat-icon>
+                                <mat-icon>arrow_drop_down_circle</mat-icon>
 
                             </button>
                             +26%</span>
 
                     </div>
                 </div>
-                <div class="anal_body"></div>
+                <div class="anal_body">
+                    <ngx-charts-area-chart [view]="view1" [scheme]="colorScheme1" 
+                        [legend]="legend"
+                        [showXAxisLabel]="showXAxisLabel" 
+                        [showYAxisLabel]="showYAxisLabel" 
+                        [xAxis]="true"
+                        [yAxis]="true" 
+                        
+                        [timeline]="timeline" [results]="multi"
+                        (select)="onSelect($event)">
+                    </ngx-charts-area-chart>
+                </div>
 
             </div>
         </div>
         <!-- Transaction List -->
         <div class="transactionList" fxLayoutAlign="center center">
             <div class="trans_Header">
-                <div class="trans_Header_text">
+                <div class="trans_Header_text" fxLayoutAlign="space-between center">
                     <span>Previous Transaction</span>
-                    <span>View All</span>
+                    <span style="color: #1466f5;">View All</span>
                 </div>
                 <div class="trans_SubHeader" fxLayoutAlign="center center">
-                    <span class="trans_brand">Brand</span>
-                    <span class="trans_Date">Date</span>
-                    <span class="trans_Vendor">Vendor</span>
-                    <span class="trans_purDetails">Purchased Detail</span>
-                    <span class="trans_Cost">Cost</span>
-                    <span class="trans_Details">Details</span>
+                    <span class="trans_brand" style="color: #8b9297;font-size: 1vw;">Brand</span>
+                    <span class="trans_Date" style="color: #8b9297;font-size: 1vw;">Date</span>
+                    <span class="trans_Vendor" style="color: #8b9297;font-size: 1vw;">Vendor</span>
+                    <span class="trans_purDetails" style="color: #8b9297;font-size: 1vw;">Purchased Detail</span>
+                    <span class="trans_Cost" style="color: #8b9297;font-size: 1vw;">Cost</span>
+                    <span class="trans_Details" style="color: #8b9297;">Details</span>
                 </div>
                 <div style="width: 100%;min-height: fit-content;background-color: white;">
                     <!-- 1 -->
@@ -82,15 +98,26 @@
                     <!-- 2 -->
                     <div class="trans_header_Sub" fxLayoutAlign="center center">
                         <span class="trans_brand" fxLayoutAlign="start center">
-                            <img src="https://img.icons8.com/color/48/000000/suzuki.png" />
-                        </span>
-                        <span class="trans_Date" fxLayoutAlign="start center">28 May</span>
-                        <span class="trans_Vendor" fxLayoutAlign="start center">Suzuki</span>
-                        <span class="trans_purDetails" fxLayoutAlign="start center">Service Center Bike </span>
-                        <span class="trans_Cost" fxLayoutAlign="start center">$87.00</span>
+                            <img src="https://img.icons8.com/color/48/000000/hulu.png"/>                      
+                         </span>
+                        <span class="trans_Date" fxLayoutAlign="start center">2 April</span>
+                        <span class="trans_Vendor" fxLayoutAlign="start center">Hulu</span>
+                        <span class="trans_purDetails" fxLayoutAlign="start center">Hulu Subcription</span>
+                        <span class="trans_Cost" fxLayoutAlign="start center">$48.00</span>
                         <span class="trans_Details" style="color: #19cc5a;" fxLayoutAlign="start center">
                             <button mat-stroked-button color="#19cc5a">Details</button></span>
                     </div>
+                    <div class="trans_header_Sub" fxLayoutAlign="center center">
+                            <span class="trans_brand" fxLayoutAlign="start center">
+                                    <img src="https://img.icons8.com/bubbles/50/000000/netflix.png"/>                         
+                                    </span>
+                            <span class="trans_Date" fxLayoutAlign="start center">2 September</span>
+                            <span class="trans_Vendor" fxLayoutAlign="start center">Netflix</span>
+                            <span class="trans_purDetails" fxLayoutAlign="start center">Netflix Subcription</span>
+                            <span class="trans_Cost" fxLayoutAlign="start center">$125.00</span>
+                            <span class="trans_Details" style="color: #19cc5a;" fxLayoutAlign="start center">
+                                <button mat-stroked-button color="#19cc5a">Details</button></span>
+                        </div>
 
                 </div>
             </div>
@@ -100,8 +127,8 @@
     <div class="dash-right" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="5%">
         <div class="credit-Card" fxLayout="column" fxLayoutAlign="start center">
             <div class="credit-Card-header" fxLayout="row" fxLayoutAlign="space-between center">
-                <span>Saved Cards</span>
-                <span>+Add New Card</span>
+                <span style="font-size: 1.25vw;">Saved Cards</span>
+                <span style="color: #1466f5;font-size: 1vw;">+ Add New Card</span>
             </div>
             <div class="credit-Card-body" fxLayout="column" fxLayoutAlign="center center">
                 <div class="credit-Card-body-header" fxLayout="row" fxLayoutAlign="space-between start">
@@ -148,28 +175,28 @@
         </div>
         <div class="automated_transaction" fxLayout="column" fxLayoutAlign="start center">
             <span class="auto_trans_header">Automative Payments</span>
-            <div class="auto_trans_body"  fxLayout="column" fxLayoutGap="7%">
+            <div class="auto_trans_body" fxLayout="column" fxLayoutGap="7%">
                 <!-- 1 -->
-                <div class="auto_data"  fxLayout="row">
+                <div class="auto_data" fxLayout="row">
                     <div class="auto_data_img" fxLayoutAlign="center center">
                         <img src="https://img.icons8.com/color/64/000000/triceps.png" /></div>
-                    <div class="auto_data_detail"  fxLayout="column">
-                        <span >Gym bill</span>
-                        <span >1d 23hrs</span>
+                    <div class="auto_data_detail" fxLayout="column">
+                        <span>Gym bill</span>
+                        <span>1d 23hrs</span>
                     </div>
-                    <div class="auto_button"  fxLayoutAlign="center center"> <button mat-stroked-button
+                    <div class="auto_button" fxLayoutAlign="center center"> <button mat-stroked-button
                             color="#bac2ce">Cancel</button></div>
                 </div>
                 <!-- 2 -->
                 <div class="auto_data" fxLayout="row">
                     <div class="auto_data_img" fxLayoutAlign="center center">
-                            <img src="https://img.icons8.com/cute-clipart/64/000000/amazon.png"/>
+                        <img src="https://img.icons8.com/cute-clipart/64/000000/amazon.png" />
                     </div>
-                    <div  class="auto_data_detail" fxLayout="column">
-                        <span >Web Services bill</span>
-                        <span >139d 23hrs</span>
+                    <div class="auto_data_detail" fxLayout="column">
+                        <span>Web Services bill</span>
+                        <span>139d 23hrs</span>
                     </div>
-                    <div class="auto_button"  fxLayoutAlign="center center"> <button mat-stroked-button
+                    <div class="auto_button" fxLayoutAlign="center center"> <button mat-stroked-button
                             color="#bac2ce">Cancel</button></div>
                 </div>
 

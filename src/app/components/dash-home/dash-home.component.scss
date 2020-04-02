@@ -16,6 +16,8 @@
     width:30%;
     height: 90%;
     background-color: white;
+    border-radius: 15px;
+
 }
 .bal_Header{
     width: 50%;
@@ -25,7 +27,8 @@
     width: 60%;
     height: 10%;
     font-size: 2vw;
-    color: #3f51b5;
+    color: #2f74f5;
+    font-weight: 500;
 }
 .bal_body{
     width: 80%;
@@ -45,7 +48,6 @@
 .bal_body_graph{
     width: 100%;
     height: 35%;
-    background-color: lightgrey; 
 }
 .bal_body_overAll{
     width: 90%;
@@ -59,14 +61,18 @@
     width: 65%;
     height: 90%;
     background-color: white;
+    border-radius: 15px;
+
 }
 .anal_Header{
     width: 100%;
     height: 10%;
 }
 .anal_Header_text{
-    width: 70%;
+    width: 80%;
     height: 100%;
+    font-size: 1.20vw;
+    font-weight: 500;
 }
 .anal_Header_per{
     width: 30%;
@@ -76,7 +82,7 @@
 .anal_body{
     width: 100%;
     height: 80%;
-    background-color: lightgrey;
+    // background-color: lightgrey;
 }
 .transactionList{
     width: 100%;
@@ -90,7 +96,8 @@
 }
 .trans_Header_text{
     width:100%;
-    height: 10%;
+    height: 15%;
+    font-weight: 500;
 }
 .trans_SubHeader{
     width: 100%;
@@ -152,7 +159,7 @@
 .credit-Card-body{
     width:80%;
     height: 90%;
-    background-color:#6ba1fd;
+    background-color:#2f74f5;
     border-radius: 17px;
     box-shadow:-2px 0px 16px 7px lightgray; 
 }
@@ -193,6 +200,8 @@
     width: 90%;
     height: 25%;
     background-color: white;
+    border-radius: 15px;
+
 }
 .auto_trans_header{
     width: 90%;
@@ -201,6 +210,9 @@
     font-weight: 500;
     font-size: 1.2vw;
     padding: 10px; 
+
+
+
 }
 .auto_trans_body{
     width: 90%;
