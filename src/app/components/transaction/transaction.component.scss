@@ -1,0 +1,94 @@
+.trans_Header{
+    width:100%;
+    height: 90%;
+    
+}
+.trans_Header_text{
+    width:95%;
+    height: 15%;
+    font-weight: 500;
+}
+.trans_SubHeader{
+    width: 100%;
+    height: 10%;
+    background-color: #f6f7fb;
+}
+.trans_brand{
+    width: 10%;
+    height: 100%;
+}
+.trans_Date{
+    width: 10%;
+    height: 100%;
+
+}
+.trans_Vendor{
+    width: 15%;
+    height: 100%;
+}
+.trans_purDetails{
+    width: 30%;
+    height: 100%;
+}
+.trans_Cost{
+    width: 15%;
+    height: 100%;
+}
+.trans_Details{
+    width: 15%;
+    height: 100%;
+    
+}
+.trans_header_Sub{
+    width: 100%;
+    height: 20%;
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
+    
+    &:hover{
+        background-color: white;
+        box-shadow:-2px 0px 16px 7px lightgray;
+        
+        
+    }
+}
+
+.automated_transaction{
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    border-radius: 15px;
+
+}
+.auto_trans_header{
+    width: 90%;
+    height: 15%;
+    background-color: white;
+    font-weight: 500;
+    font-size: 1.2vw;
+    padding: 10px; 
+
+
+
+}
+.auto_trans_body{
+    width: 90%;
+    height: 85%;
+}
+.auto_data{
+    width: 90%;
+    height: 10%;
+}
+.auto_data_img{
+    width: 30%;
+    height: 100%;
+}
+.auto_data_detail{
+    width: 40%;
+    height: 100%;
+    font-size: 1vw;
+}
+.auto_button{
+    width: 30%;
+    height: 100%;
+}

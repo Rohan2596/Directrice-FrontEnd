@@ -11,6 +11,8 @@ import { HomeComponent } from './components/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { DashHomeComponent } from './components/dash-home/dash-home.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { NotificationComponent } from './components/notification/notification.component';
+import { TransactionComponent } from './components/transaction/transaction.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
     LoginComponent,
     HomeComponent,
     DashboardComponent,
-    DashHomeComponent
+    DashHomeComponent,
+    NotificationComponent,
+    TransactionComponent
   
   ],
   imports: [
