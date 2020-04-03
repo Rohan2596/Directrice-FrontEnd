@@ -13,6 +13,9 @@ import { DashHomeComponent } from './components/dash-home/dash-home.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { NotificationComponent } from './components/notification/notification.component';
 import { TransactionComponent } from './components/transaction/transaction.component';
+import { WalletComponent } from './components/wallet/wallet.component';
+import { ChatComponent } from './components/chat/chat.component';
+import { AddServicesComponent } from './components/add-services/add-services.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { TransactionComponent } from './components/transaction/transaction.compo
     DashboardComponent,
     DashHomeComponent,
     NotificationComponent,
-    TransactionComponent
+    TransactionComponent,
+    WalletComponent,
+    ChatComponent,
+    AddServicesComponent
   
   ],
   imports: [
