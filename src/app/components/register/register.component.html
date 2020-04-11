@@ -33,10 +33,10 @@
                 <mat-hint>Please Enter Password.</mat-hint>
             </mat-form-field>
         </div>
-            <div class="createAccount">
+            <div class="createAccount" (click)="register()">
                 Register</div>
             <!-- on hover underline -->
-            <div class="LoginToAccount">Already Have Account ? <span href="#" style="color: black;font-weight: 500;" >Login</span></div>
+            <div class="LoginToAccount" (click)="toLogin()">Already Have Account ? <span href="#" style="color: black;font-weight: 500;" >Login</span></div>
             
         </div>
     </div>

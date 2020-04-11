@@ -19,19 +19,18 @@
   <mat-sidenav-container>
 
     <mat-sidenav #sidenav mode="side" style="width: 5%;height: 100vh">
-      <mat-nav-list  fxLayout="column" >
+      <mat-nav-list  fxLayout="column"  fxLayoutGap="20px" fxLayoutAlign="start center" >
 
+      <div style="cursor: pointer;"  (click)="home()" ><mat-icon >home</mat-icon></div>
+      <div style="cursor: pointer;" (click)="wallet()" ><mat-icon >account_balance_wallet</mat-icon></div>
+      <div style="cursor: pointer;"  (click)="chat()"><mat-icon >chat</mat-icon></div>
+      
 
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content class="mat-sidenav-content" style="width: 100%;height: 92vh;">
       
-      <!-- <router-outlet></router-outlet> -->
-
-      <!-- <app-dash-home></app-dash-home> -->
-      <!-- <app-transaction></app-transaction> -->
-      <!-- <app-wallet></app-wallet> -->
-    <app-chat></app-chat>
+      <router-outlet></router-outlet>
     </mat-sidenav-content>
 
   </mat-sidenav-container>

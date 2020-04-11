@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import{ Router } from '@angular/router';
 @Component({
   selector: 'app-dash-home',
   templateUrl: './dash-home.component.html',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashHomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router ) { }
 
   ngOnInit() {
   }
@@ -127,6 +127,7 @@ public multi=[
 
   ]
 },]
+
 
 
 }
