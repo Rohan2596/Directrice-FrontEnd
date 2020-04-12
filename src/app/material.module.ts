@@ -86,7 +86,8 @@ import {MatBadgeModule} from '@angular/material/badge';
     MatMenuModule,
     BrowserAnimationsModule,
   MatAutocompleteModule,
-  MatBadgeModule
+  MatBadgeModule,
+  FormsModule
 
   ]
 

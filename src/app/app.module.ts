@@ -16,6 +16,7 @@ import { TransactionComponent } from './components/transaction/transaction.compo
 import { WalletComponent } from './components/wallet/wallet.component';
 import { ChatComponent } from './components/chat/chat.component';
 import { AddServicesComponent } from './components/add-services/add-services.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { AddServicesComponent } from './components/add-services/add-services.com
     AppRoutingModule,
     BrowserAnimationsModule,
     NgxChartsModule,
-    Material
+    Material,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

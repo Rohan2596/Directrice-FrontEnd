@@ -16,19 +16,19 @@
             <div style="width: 50%;height: 35%;"fxLayout="column" fxLayoutGap="2%" >
             <mat-form-field appearance="outline">
                 <mat-label>Name</mat-label>
-                <input matInput placeholder="Placeholder">
+                <input matInput placeholder="Placeholder" [formControl]="username">
                 <mat-icon matSuffix>person</mat-icon>
                 <mat-hint>Please Enter Full Name.</mat-hint>
             </mat-form-field>
             <mat-form-field appearance="outline">
                 <mat-label>Email</mat-label>
-                <input matInput placeholder="Placeholder">
+                <input matInput placeholder="Placeholder" [formControl]="email" >
                 <mat-icon matSuffix>email</mat-icon>
                 <mat-hint>Please Enter Email Address.</mat-hint>
             </mat-form-field>
             <mat-form-field appearance="outline">
                 <mat-label>Password</mat-label>
-                <input matInput placeholder="Placeholder">
+                <input matInput placeholder="Placeholder" autocomplete="off" [formControl]="password" >
                 <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
                 <mat-hint>Please Enter Password.</mat-hint>
             </mat-form-field>
