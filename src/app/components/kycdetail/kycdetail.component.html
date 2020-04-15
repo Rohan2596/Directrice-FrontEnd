@@ -1,0 +1,70 @@
+<div class="homeMain" fxLayoutAlign="center center">
+    <div class="homeSub" fxLayout="row">
+        <div class="homeLeft" fxLayout="column" fxLayoutAlign="center center">
+
+            <div fxLayout="column" fxLayoutAlign="center center">
+                <div class="title">KYC ...</div>
+                <p class="para">
+                    Never better time than now to start
+                    thinking about how you manage all your
+                    finances with ease.
+                </p>
+            </div>
+
+        </div>
+        <div class="homeRight" fxLayout="column" fxLayoutGap="5%" fxLayoutAlign="center center">
+        <div style="width: 75%;height: 65%;padding: 2.5%;border:1px solid #9d9d9d" fxLayoutGap="5%" fxLayout="column"  > 
+        <div style="width:100%;height: 75%;" fxLayoutGap="2.5%" fxLayout="column" >
+            <div style="width:100%;height: 30%;" fxLayoutGap="1%" fxLayout="row">
+                <mat-form-field appearance="outline" style="width: 32%;">
+                    <mat-label>Last Name</mat-label>
+                    <input matInput placeholder="Last Name"  autocomplete="off"> 
+                    <!-- <mat-hint   style="font-size: smaller;">Please Enter LastName.</mat-hint> -->
+                    <mat-error  ></mat-error>
+                </mat-form-field>
+                <mat-form-field appearance="outline" style="width: 32%;">
+                    <mat-label>First Name</mat-label>
+                    <input matInput placeholder="First Name"  autocomplete="off"> 
+                    <!-- <mat-hint style="font-size: smaller;">Please Enter FirstName.</mat-hint> -->
+                    <mat-error  ></mat-error>
+                </mat-form-field>
+                <mat-form-field appearance="outline" style="width: 32.5%;">
+                    <mat-label>Middle Name</mat-label>
+                    <input matInput placeholder="Middle Name"  autocomplete="off"> 
+                    <!-- <mat-hint style="font-size: smaller;" >Please Enter MiddleName.</mat-hint> -->
+                    <mat-error  ></mat-error>
+                </mat-form-field>
+    
+            </div>
+             <mat-form-field appearance="outline" style="width: 60%;">
+                <mat-label>PanCard Number</mat-label>
+                <input matInput placeholder="PanCard Number"  autocomplete="off">
+                <mat-icon matSuffix>perm_identity</mat-icon>
+                <mat-hint >Please Enter PanCard Number.</mat-hint>
+                <mat-error  ></mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="outline" style="width: 60%;">
+                <mat-label>Aadhaar Card Number</mat-label>
+                <input matInput placeholder="PanCard Number"  autocomplete="off">
+                <mat-icon matSuffix>perm_identity</mat-icon>
+                <mat-hint >Please Enter Aadhaar Card Number.</mat-hint>
+                <mat-error  ></mat-error>
+            </mat-form-field>
+            <mat-form-field style="width: 30%;">
+                <mat-label>Date of Birth</mat-label>
+                <input matInput [matDatepicker]="dp">
+                <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+                <mat-datepicker #dp></mat-datepicker>
+              </mat-form-field>
+        </div>
+        <div style="width: 100%;height: 20%;"    fxLayout="row" fxLayoutAlign="end center" >
+            <button mat-raised-button  (click)="nextDetail()" style="width: 20%;height: 60%;background-color: #7966ff;color: white;" >Next</button>
+
+
+        </div>
+        </div>
+    
+
+        </div>
+    </div>
+</div>

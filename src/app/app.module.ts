@@ -17,6 +17,7 @@ import { WalletComponent } from './components/wallet/wallet.component';
 import { ChatComponent } from './components/chat/chat.component';
 import { AddServicesComponent } from './components/add-services/add-services.component';
 import { HttpClientModule } from '@angular/common/http';
+import { KYCDetailComponent } from './components/kycdetail/kycdetail.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { HttpClientModule } from '@angular/common/http';
     TransactionComponent,
     WalletComponent,
     ChatComponent,
-    AddServicesComponent
+    AddServicesComponent,
+    KYCDetailComponent
   
   ],
   imports: [

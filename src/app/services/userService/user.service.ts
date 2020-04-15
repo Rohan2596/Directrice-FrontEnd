@@ -8,8 +8,8 @@ export class UserService {
 
   constructor(private http:HttpService) { }
 
-  login(login:any){
-    return this.http.postRequest('/login',login);
+  toLogin(login:any){
+    return this.http.postRequest('/authenticate',login);
 
   }
   toRegister(register:any){

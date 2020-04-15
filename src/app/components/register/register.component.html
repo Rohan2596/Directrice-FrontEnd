@@ -13,28 +13,39 @@
 
         </div>
         <div class="homeRight" fxLayout="column" fxLayoutGap="5%" fxLayoutAlign="center center">
-            <div style="width: 50%;height: 35%;"fxLayout="column" fxLayoutGap="2%" >
+            <div style="width: 50%;height: 48%;"fxLayout="column" fxLayoutGap="2%" >
             <mat-form-field appearance="outline">
-                <mat-label>Name</mat-label>
+                <mat-label>UserName</mat-label>
                 <input matInput placeholder="Placeholder" [formControl]="username">
                 <mat-icon matSuffix>person</mat-icon>
-                <mat-hint>Please Enter Full Name.</mat-hint>
+                <mat-hint *ngIf="username.invalid">Please Enter UserName.</mat-hint>
+                <mat-error >{{this.getErrorMessageUserName()}} </mat-error>
+
             </mat-form-field>
             <mat-form-field appearance="outline">
                 <mat-label>Email</mat-label>
                 <input matInput placeholder="Placeholder" [formControl]="email" >
                 <mat-icon matSuffix>email</mat-icon>
-                <mat-hint>Please Enter Email Address.</mat-hint>
+                <mat-hint *ngIf="email.invalid" >Please Enter Email Address.</mat-hint>
+                <mat-error  >{{this.getErrorMessageEmail()}} </mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Mobile Number</mat-label>
+                <input matInput placeholder="Placeholder" [formControl]="mobile" >
+                <mat-icon matSuffix>email</mat-icon>
+                <mat-hint *ngIf="mobile.invalid" >Please Enter Mobile Number.</mat-hint>
+                <mat-error  >{{this.getErrorMessageMobileNumber()}} </mat-error>
             </mat-form-field>
             <mat-form-field appearance="outline">
                 <mat-label>Password</mat-label>
                 <input matInput placeholder="Placeholder" autocomplete="off" [formControl]="password" >
                 <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-                <mat-hint>Please Enter Password.</mat-hint>
+                <mat-hint *ngIf="password.invalid">Please Enter Password.</mat-hint>
+                <mat-error  >{{this.getErrorMessagePassword()}} </mat-error>
             </mat-form-field>
         </div>
-            <div class="createAccount" (click)="register()">
-                Register</div>
+            <div class="createAccount" (click)="register()"  >   Register</div>
+                    
             <!-- on hover underline -->
             <div class="LoginToAccount" (click)="toLogin()">Already Have Account ? <span href="#" style="color: black;font-weight: 500;" >Login</span></div>
             

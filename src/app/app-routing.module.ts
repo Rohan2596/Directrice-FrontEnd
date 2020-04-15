@@ -7,6 +7,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { DashHomeComponent } from './components/dash-home/dash-home.component';
 import { ChatComponent } from './components/chat/chat.component';
 import { WalletComponent } from './components/wallet/wallet.component';
+import { KYCDetailComponent } from './components/kycdetail/kycdetail.component';
 
 
 const routes: Routes = [
@@ -28,6 +29,10 @@ const routes: Routes = [
   ,{
     path:'register',
     component:RegisterComponent
+  },
+  {
+    path:'kyc',
+    component:KYCDetailComponent
   },
   {
     path:'dashboard',
