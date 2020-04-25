@@ -18,6 +18,7 @@ import { ChatComponent } from './components/chat/chat.component';
 import { AddServicesComponent } from './components/add-services/add-services.component';
 import { HttpClientModule } from '@angular/common/http';
 import { KYCDetailComponent } from './components/kycdetail/kycdetail.component';
+import { AccountCreateComponent } from './components/account-create/account-create.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { KYCDetailComponent } from './components/kycdetail/kycdetail.component';
     WalletComponent,
     ChatComponent,
     AddServicesComponent,
-    KYCDetailComponent
+    KYCDetailComponent,
+    AccountCreateComponent
   
   ],
   imports: [

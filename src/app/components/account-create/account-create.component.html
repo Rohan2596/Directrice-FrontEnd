@@ -1,0 +1,131 @@
+<div class="homeMain" fxLayoutAlign="center center">
+    <div class="homeSub" fxLayout="row">
+        <div class="homeLeft" fxLayout="column" fxLayoutAlign="center center">
+
+            <div fxLayout="column" fxLayoutAlign="center center">
+                <div class="title">Create Account.</div>
+                <p class="para">
+                    Never better time than now to start
+                    thinking about how you manage all your
+                    finances with ease.
+                </p>
+            </div>
+
+        </div>
+        <div class="homeRight" fxLayout="column" fxLayoutGap="5%" fxLayoutAlign="center center">
+            <div style="width: 80%;height: 90%;" fxLayoutAlign="center center">
+            <div style="width: 60%;height: 90%;"fxLayout="column" fxLayoutGap="2%" *ngIf="show" >
+            
+            <mat-form-field appearance="outline">
+                <mat-label>First Name</mat-label>
+                <input matInput placeholder="Placeholder"  autocomplete="off" >
+                <mat-icon matSuffix>email</mat-icon>
+                <mat-hint  >Please Enter Password.</mat-hint>
+                <!-- <mat-error  >{{this.getErrorMessageEmail()}} </mat-error> -->
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Last Name</mat-label>
+                <input matInput placeholder="Placeholder"  autocomplete="off">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <mat-hint >Please Enter Password.</mat-hint>
+                <!-- <mat-error  >{{this.getErrorMessagePassword()}} </mat-error> -->
+
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Date of BirthDay</mat-label>
+                <input matInput [matDatepicker]="picker">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Occupation</mat-label>
+                <input matInput placeholder="Placeholder"  autocomplete="off">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <mat-hint >Please Enter Password.</mat-hint>
+                <!-- <mat-error  >{{this.getErrorMessagePassword()}} </mat-error> -->
+
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Nationality</mat-label>
+                <input matInput placeholder="Placeholder"  autocomplete="off">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <mat-hint >Please Enter Password.</mat-hint>
+                <!-- <mat-error  >{{this.getErrorMessagePassword()}} </mat-error> -->
+
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Country of Residences</mat-label>
+                <input matInput placeholder="Placeholder"  autocomplete="off">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <mat-hint >Please Enter Password.</mat-hint>
+                <!-- <mat-error  >{{this.getErrorMessagePassword()}} </mat-error> -->
+
+            </mat-form-field>
+       <div style="width: 100%;height: 10%;" fxLayout="row" fxLayoutAlign="space-between center">
+            <button  mat-raised-button class="createAccount" (click)="show = !show">next</button>
+            <button  mat-raised-button class="createAccount" (click)="show = !show">next</button>
+        </div>
+        </div>
+        <div style="width: 60%;height: 90%;"fxLayout="column" fxLayoutGap="2%" *ngIf="!show" >
+            
+            <mat-form-field appearance="outline">
+                <mat-label>Address</mat-label>
+                <input matInput placeholder="Placeholder"  autocomplete="off" >
+                <mat-icon matSuffix>email</mat-icon>
+                <mat-hint  >Please Enter Password.</mat-hint>
+                <!-- <mat-error  >{{this.getErrorMessageEmail()}} </mat-error> -->
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Town</mat-label>
+                <input matInput placeholder="Placeholder"  autocomplete="off">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <mat-hint >Please Enter Password.</mat-hint>
+                <!-- <mat-error  >{{this.getErrorMessagePassword()}} </mat-error> -->
+
+            </mat-form-field>
+           
+            <mat-form-field appearance="outline">
+                <mat-label>District</mat-label>
+                <input matInput placeholder="Placeholder"  autocomplete="off">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <mat-hint >Please Enter Password.</mat-hint>
+                <!-- <mat-error  >{{this.getErrorMessagePassword()}} </mat-error> -->
+
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>State</mat-label>
+                <input matInput placeholder="Placeholder"  autocomplete="off">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <mat-hint >Please Enter Password.</mat-hint>
+                <!-- <mat-error  >{{this.getErrorMessagePassword()}} </mat-error> -->
+
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Country</mat-label>
+                <input matInput placeholder="Placeholder"  autocomplete="off">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <mat-hint >Please Enter Password.</mat-hint>
+                <!-- <mat-error  >{{this.getErrorMessagePassword()}} </mat-error> -->
+
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>PostalCode</mat-label>
+                <input matInput placeholder="Placeholder"  autocomplete="off">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <mat-hint >Please Enter Password.</mat-hint>
+                <!-- <mat-error  >{{this.getErrorMessagePassword()}} </mat-error> -->
+
+            </mat-form-field>
+       
+            <div style="width: 100%;height: 10%;" fxLayout="row" fxLayoutAlign="space-between center">
+                <button  mat-raised-button class="createAccount" (click)="show = !show">next</button>
+                <button  mat-raised-button class="createAccount" (click)="show = !show">next</button>
+            </div>     
+         </div>
+            
+            
+        </div>
+        </div>
+    </div>
+</div>
+

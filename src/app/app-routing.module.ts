@@ -8,6 +8,7 @@ import { DashHomeComponent } from './components/dash-home/dash-home.component';
 import { ChatComponent } from './components/chat/chat.component';
 import { WalletComponent } from './components/wallet/wallet.component';
 import { KYCDetailComponent } from './components/kycdetail/kycdetail.component';
+import { AccountCreateComponent } from './components/account-create/account-create.component';
 
 
 const routes: Routes = [
@@ -33,6 +34,9 @@ const routes: Routes = [
   {
     path:'kyc',
     component:KYCDetailComponent
+  },{
+path:'account',
+component:AccountCreateComponent
   },
   {
     path:'dashboard',
