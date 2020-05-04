@@ -13,7 +13,7 @@
 
         </div>
         <div class="homeRight" fxLayout="column" fxLayoutGap="5%" fxLayoutAlign="center center">
-            <div style="width: 50%;height: 48%;"fxLayout="column" fxLayoutGap="2%" >
+            <div style="width: 55%;max-height: 52%;"fxLayout="column" fxLayoutGap="2%" >
             <mat-form-field appearance="outline">
                 <mat-label>UserName</mat-label>
                 <input matInput placeholder="Placeholder" [formControl]="username">
@@ -43,6 +43,10 @@
                 <mat-hint *ngIf="password.invalid">Please Enter Password.</mat-hint>
                 <mat-error  >{{this.getErrorMessagePassword()}} </mat-error>
             </mat-form-field>
+            <div fxLayout="row" fxLayoutAlign="space-between center">
+                <mat-checkbox  ><div class="LoginToAccount" >I have read and understand Terms and Conditions.</div></mat-checkbox>
+                
+            </div>
         </div>
             <div class="createAccount" (click)="register()"  >   Register</div>
                     

@@ -13,24 +13,30 @@
     
             </div>
             <div class="homeRight" fxLayout="column" fxLayoutGap="5%" fxLayoutAlign="center center">
-                <div style="width: 50%;height: 21%;"fxLayout="column" fxLayoutGap="2%" >
+                <div style="width: 50%;max-height: 25%;"fxLayout="column" fxLayoutGap="2%" >
                 
                 <mat-form-field appearance="outline">
                     <mat-label>Email</mat-label>
-                    <input matInput placeholder="Placeholder"  autocomplete="off" [formControl]="email">
+                    <input matInput placeholder="Enter Email Address."  autocomplete="off" [formControl]="email">
                     <mat-icon matSuffix>email</mat-icon>
                     <mat-hint *ngIf="email.invalid" >Please Enter Password.</mat-hint>
                     <mat-error  >{{this.getErrorMessageEmail()}} </mat-error>
                 </mat-form-field>
                 <mat-form-field appearance="outline">
                     <mat-label>Password</mat-label>
-                    <input matInput placeholder="Placeholder"  autocomplete="off" [formControl]="password">
+                    <input matInput placeholder="Enter Password."  autocomplete="off" [formControl]="password">
                     <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
                     <mat-hint *ngIf="password.invalid">Please Enter Password.</mat-hint>
                     <mat-error  >{{this.getErrorMessagePassword()}} </mat-error>
     
                 </mat-form-field>
+
+                <div fxLayout="row" fxLayoutAlign="space-between center">
+                    <mat-checkbox  >Checked</mat-checkbox>
+                    <div class="LoginToAccount" >Forgot Password ?</div>
+                </div>
             </div>
+            
                 <div class="createAccount" (click)="login()">
                     Login</div>
                 <!-- on hover underline -->
