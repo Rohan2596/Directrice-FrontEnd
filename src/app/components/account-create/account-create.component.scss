@@ -1,3 +1,5 @@
+@import '../../scss/color.scss';
+@import '../../scss/constant.scss';
 .homeMain{
     width: 100%;
     height: 100%;
@@ -9,9 +11,9 @@
 }
 
 .homeLeft{
-    width: 40%;
+    width: 30%;
     height: 100%;
-    background-color: #7966FF;
+    background-color: $primary_color;
 }
 .title{
     font-size: xx-large;
@@ -26,14 +28,16 @@
     color: #ffffff;
 }
 .homeRight{
-    width: 60%;
+    width: 70%;
     height: 100%; 
 }
 .createAccount{
-    width: 50%;height: 100%;
-    background-color: #7966FF;
+    width: 15%;height: 100%;
+    background-color: $primary_color;
     color: #ffffff;
     display: flex;
+    font-size:x-large;
+
     align-items: center;
     justify-content: center;
     border-radius:20px;
