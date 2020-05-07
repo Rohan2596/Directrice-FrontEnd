@@ -210,7 +210,7 @@
 
                 </div>
                 <div style="width: 100%;height: 8%;" fxLayout="row" fxLayoutAlign="space-between center">
-                    <button  mat-raised-button class="createAccount" (click)="show = !show">Rest-All</button>
+                    <button  mat-raised-button class="createAccount" (click)="next(1)">Rest-All</button>
                     <button  mat-raised-button class="createAccount" (click)="next(3)">Next</button>
                 </div>
                 
@@ -228,37 +228,29 @@
                 <div style="width: 100%;height: 5%;color: #0057ff;">
                     Account Create Application   3/3
                 </div>
-                <div style="width: 100%;height: 25%;" fxLayout="row" fxLayoutAlign="space-between start">
+                <div style="width: 100%;height: 20%;" fxLayout="row" fxLayoutAlign="space-between start">
                     <div style="width: 45%;height: 100%;" fxLayout="column">
                         
-                    </div>
-                    <div style="width: 25%;height: 100%;">
-                    </div>
-
-                </div>
-                <div style="width: 100%;height: 15%;" fxLayout="row">
-                   
-
-
-                </div>
-
-                <div style="width: 100%;height: 15%;" fxLayout="row">
-               
-
-
-                </div>
-                <div style="width: 100%;height: 15%;" fxLayout="row">
                     
-
+                        <mat-form-field appearance="standard" style="width: 45%;">
+                            <mat-label>Document</mat-label>
+                            <mat-select>
+                                <mat-option value="option">Aadhaar Card</mat-option>
+                                <mat-option value="option">Pan Card </mat-option>
+                                <mat-option value="option">Passport</mat-option>
+                                <mat-option value="option">Others</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <input type="file" name="profile" style="width: 100%;height: 60%;" (change)="fileChangeEvent($event)" />
+                    </div>
 
                 </div>
-                <div style="width: 100%;height: 15%;" fxLayout="row">
-                   
-
-
-                </div>
-                <div style="width: 100%;height: 8%;" fxLayout="row" fxLayoutAlign="space-between center">
-                    <button  mat-raised-button class="createAccount" (click)="show = !show">Rest-All</button>
+              <div style="width: 80%;height: 60%;border: 3px dashed #0057ff; padding: 1%;">
+                <img src="https://i.ibb.co/NWMtKMy/943358.jpg" alt="943358"  height="100%" width="100%">
+            </div>
+    
+                <div style="width: 100%;height: 8%;margin-top: 1%;" fxLayout="row" fxLayoutAlign="space-between center">
+                    <button  mat-raised-button class="createAccount" (click)="next(2)">Rest-All</button>
                     <button  mat-raised-button class="createAccount" (click)="next(4)">Next</button>
                 </div>
                 

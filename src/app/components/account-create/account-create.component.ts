@@ -8,7 +8,7 @@ import{Router} from '@angular/router';
 })
 export class AccountCreateComponent implements OnInit {
   screen = 1;
-
+  imageUrl:any;
 
   constructor(private router:Router) { }
 
@@ -22,5 +22,12 @@ export class AccountCreateComponent implements OnInit {
   
   
   }
+fileChangeEvent($event){
+  console.log($event);
+  const file = $event.target.files[0];
+  console.log(file);
+  this.imageUrl=file.name
+  
+}
 
 }
